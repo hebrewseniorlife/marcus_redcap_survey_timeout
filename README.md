@@ -12,21 +12,24 @@ See customization section below.
 + REDCap (v14.x.x+)
 + Shazam REDCap Module (v1.3.13+)
 
-## Dependancies
+## Dependancies (developer notes)
 + Jquery, Bootstrap (see REDCap core)
 + Idle Timer (Javascript Library)
   + https://github.com/thorst/jquery-idletimer
 
-## Installation
-1. Install Shazam on REDCap Instance (instructions separate)
-2. Enable Shazam on REDCap Project
+## Installation Instructions
+1. Install Shazam on REDCap Instance (see REDCap Modules in Control Center)
+2. Enable Shazam on REDCap Project (administrative rights required)
 3. Create Survey with at least one blank description field (e.g. "idetimeout_placeholder")
 4. Create Shazam field (see Shazam Setup link in project)
 5. Paste the contents of the HTML, CSS and JS files into the corresponding tab fields.
+>  + [HTML Content](idletime_placeholder.html)
+>  + [CSS](idletime_placeholder.css)
+>  + [Javascript](idletime_placeholder.js)
 6. Save and Test
 7. See Configuration Below
 
-### Configuration
+### Customization / Configuration
 + Idletimeout - See JS code line 2. 
 ```javascript
 var idleTimeInMinutes = 30
